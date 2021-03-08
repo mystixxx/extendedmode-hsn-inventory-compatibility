@@ -1,3 +1,7 @@
+<h5 align='center'>Modified to support <i><b>hsn-inventory</i></b> and <i><b>ghmattimysql</i></b> - with unused features removed (loadouts, inventory, pickups, etc)</h5>
+
+***
+
 # extendedmode
 extendedmode is a community edition fork of es_extended (better known as ESX) and will be maintained by various trusted members of the FiveM community.
 
