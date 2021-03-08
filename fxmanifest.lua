@@ -8,8 +8,6 @@ resource_type 'gametype' { name = 'extendedmode' }
 server_scripts {
 	'server/metrics.lua',
 
-	'@mysql-async/lib/MySQL.lua',
-
 	'locale.lua',
 	'locales/*.lua',
 
@@ -81,10 +79,6 @@ exports {
 
 server_exports {
 	'getSharedObject'
-}
-
-dependencies {
-	'mysql-async',
 }
 
 provide 'es_extended'
