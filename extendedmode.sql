@@ -1,5 +1,4 @@
 CREATE TABLE `users` (
-	`id` int unsigned NOT NULL AUTO_INCREMENT,
 	`identifier` VARCHAR(60) NOT NULL,
 	`license` VARCHAR(60) DEFAULT NULL,
 	`accounts` LONGTEXT NULL DEFAULT NULL,
@@ -7,10 +6,10 @@ CREATE TABLE `users` (
 	`inventory` LONGTEXT NULL DEFAULT NULL,
 	`job` VARCHAR(20) NULL DEFAULT 'unemployed',
 	`job_grade` INT NULL DEFAULT 0,
-	`position` VARCHAR(255) NULL DEFAULT NULL,
+	`loadout` LONGTEXT NULL DEFAULT NULL,
+	`position` VARCHAR(255) NULL DEFAULT '{"x":-269.4,"y":-955.3,"z":31.2,"heading":205.8}',
 
 	PRIMARY KEY (`identifier`)
-	UNIQUE KEY `id` (`id`)
 );
 
 CREATE TABLE `items` (
